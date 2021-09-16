@@ -9,18 +9,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreen extends AppCompatActivity {
     int duration = 3000;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
 
-        new Handler().postDelayed(new Runnable() {
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this,MainActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(getApplicationContext(),Login.class));
                 finish();
             }
-        },duration);
+        }, duration);
     }
 }

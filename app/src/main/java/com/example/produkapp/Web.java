@@ -1,36 +1,33 @@
 package com.example.produkapp;
 
 import android.os.Bundle;
-import android.view.View;
 import android.webkit.WebViewClient;
 import android.webkit.WebView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Web extends AppCompatActivity {
 
-    WebView webView;
+    WebView wbView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.web_view);
 
-        webView = findViewById(R.id.wb_view);
-        webView.getSettings().setLoadsImagesAutomatically(true);
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setDomStorageEnabled(true);
+        wbView = findViewById(R.id.webView);
 
-        // Tiga baris di bawah ini agar laman yang dimuat dapat
-        // melakukan zoom.
-        webView.getSettings().setSupportZoom(true);
-        webView.getSettings().setBuiltInZoomControls(true);
-        webView.getSettings().setDisplayZoomControls(false);
+        wbView.setWebViewClient(new WebViewClient());
+        wbView.loadUrl("https://www.orami.co.id/magazine/ikan-hias-air-tawar/");
 
-        // Baris di bawah untuk menambahkan scrollbar di dalam WebView-nya
-        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.tokopedia.com/find/ikan-hias");
-
-
+    }
+    @Override
+    public void onBackPressed() {
+        if (wbView.canGoBack()){
+            wbView.goBack();
+            Toast.makeText(this,"web close", Toast.LENGTH_SHORT).show();
+        } else
+            Toast.makeText(this,"web close", Toast.LENGTH_SHORT).show();
+        super.onBackPressed();
     }
 }

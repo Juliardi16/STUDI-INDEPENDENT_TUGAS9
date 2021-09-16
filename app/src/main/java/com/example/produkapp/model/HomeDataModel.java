@@ -5,34 +5,54 @@ import java.util.ArrayList;
 public class HomeDataModel {
     public static  String [][]data = new String[][]{
             {
-                    "Komet",
-                    "kuning",
-                    "https://hewanee.com/wp-content/uploads/2020/07/Ikan-Komet.jpg"
+                    "Ikan Mas Koki",
+                    " ",
+                    "https://cdnt.orami.co.id/unsafe/468x312/cdn-cas.orami.co.id/parenting/images/photo_orig_24df8edbfc67c418c59da0aa99071b2c29a.width-800.jpg"
             },
             {
-                    "koi",
-                    "kuning",
-                    "https://cdn-2.tstatic.net/jabar/foto/bank/images/ikan-hias_20170814_091452.jpg"
+                    "Ikan Komet",
+                    "",
+                    "https://cdnt.orami.co.id/unsafe/468x344/cdn-cas.orami.co.id/parenting/images/ikan-komet-7.width-800.jpg"
             },
             {
-                    "cupang",
-                    "Biru merah",
-                    "https://cdns.klimg.com/merdeka.com/i/w/news/2020/05/28/1181306/540x270/4-jenis-ikan-cupang-mahal-yang-cocok-untuk-dipelihara.jpg"
+                    "Ikan Black Ghost",
+                    " ",
+                    "https://cdnt.orami.co.id/unsafe/468x321/cdn-cas.orami.co.id/parenting/images/blackghost-knifefish-si-ikan-hantu-berwarna-hi.width-800.png"
             },
             {
-                    "gupy",
-                    "biru",
-                    "https://www.ruparupa.com/blog/wp-content/uploads/2020/12/Screen-Shot-2020-12-04-at-12.37.49.png"
+                    "Ikan Guppy",
+                    " ",
+                    "https://cdnt.orami.co.id/unsafe/468x311/cdn-cas.orami.co.id/parenting/images/how_do_guppy_fish_reproduce_2688_orig.width-800.jpg"
             },
             {
-                    "neon fish",
-                    "biru",
-                    "https://asset.kompas.com/crops/Kmwyf5qpXo9o0ng5VOTitSfDkik=/50x34:450x300/750x500/data/photo/2020/11/05/5fa40c4b75c02.jpg"
+                    "Ikan Lemon",
+                    " ",
+                    "https://cdnt.orami.co.id/unsafe/468x312/cdn-cas.orami.co.id/parenting/images/dsc_01_9aba379ce1.width-800.jpg"
             },
             {
-                    "arwana",
-                    "merah",
-                    "https://www.ruparupa.com/blog/wp-content/uploads/2021/04/Screen-Shot-2021-04-01-at-23.23.32.png"
+                    "Ikan Cupang",
+                    " ",
+                    "https://cdnt.orami.co.id/unsafe/468x264/cdn-cas.orami.co.id/parenting/images/betta_fish_home_1.width-800.jpg"
+            },
+            {
+                    "Ikan Neon Tetra",
+                    " ",
+                    "https://cdnt.orami.co.id/unsafe/468x312/cdn-cas.orami.co.id/parenting/images/1200-47794658-neon-tetra-colored-fish.width-800.jpg"
+            },
+            {
+                    "Ikan Botia",
+                    " ",
+                    "https://cdnt.orami.co.id/unsafe/468x293/cdn-cas.orami.co.id/parenting/images/1200px-botia_striata.width-800.jpg"
+            },
+            {
+                    "Ikan Manfish",
+                    " ",
+                    "https://cdnt.orami.co.id/unsafe/468x311/cdn-cas.orami.co.id/parenting/images/ikan_manfish.width-800.jpg"
+            },
+            {
+                    "Ikan Molly",
+                    " ",
+                    "https://cdnt.orami.co.id/unsafe/468x335/cdn-cas.orami.co.id/parenting/images/molly-fry-tropical-fish-58da6ae0b385e.width-800.jpg"
             },
     };
     public static ArrayList<HomeModel> getlistData(){
